@@ -20196,9 +20196,9 @@ cr.behaviors.solid = function(runtime)
 cr.getObjectRefTable = function () { return [
 	cr.plugins_.Mouse,
 	cr.plugins_.Keyboard,
+	cr.plugins_.Sprite,
 	cr.plugins_.Particles,
 	cr.plugins_.Text,
-	cr.plugins_.Sprite,
 	cr.behaviors.Platform,
 	cr.behaviors.scrollto,
 	cr.behaviors.bound,
@@ -20227,6 +20227,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.acts.MoveForward,
 	cr.plugins_.Sprite.prototype.acts.SetTowardPosition,
 	cr.plugins_.Sprite.prototype.exps.X,
-	cr.plugins_.Sprite.prototype.exps.Y
+	cr.plugins_.Sprite.prototype.exps.Y,
+	cr.plugins_.Sprite.prototype.acts.SetPos
 ];};
 
